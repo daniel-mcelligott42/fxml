@@ -1,6 +1,8 @@
 package com.example.newtry;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -33,6 +35,9 @@ public class HelloApplication extends Application {
 
     private static void main(String[] args) {
     }
+
+
+
 
     public class MyAppLauncher {public static void main(String[] args) {HelloApplication.main(args);}}
 

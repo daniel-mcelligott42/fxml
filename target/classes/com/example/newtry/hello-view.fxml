@@ -9,7 +9,12 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.text.Text?>
-<GridPane fx:controller="com.example.newtry.HelloApplication"
+
+
+<?import javafx.scene.layout.HBox?>
+
+
+<GridPane fx:controller="com.example.newtry.HelloController"
           xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
     <padding><Insets top="25" right="25" bottom="10" left="25"/></padding>
     <Text text="Welcome"
@@ -27,4 +32,17 @@
 
     <PasswordField fx:id="passwordField"
                    GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+
+    <HBox spacing="10" alignment="bottom_right"
+          GridPane.columnIndex="1" GridPane.rowIndex="4">
+        <Button text="Sign In"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+    <Text fx:id="actiontarget"
+          GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+
+
+
 </GridPane>
