@@ -27,4 +27,13 @@ public static boolean checkEmail(String email) {
     }
     }
 
+    public static boolean passwordLength(String pword) {
+        if (pword.length() < 7) {
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+
 }
