@@ -29,7 +29,11 @@ public class HelloApplication extends Application {
 
     }
 
-    public static void main(String[] args) {
-        launch();
+
+
+    private static void main(String[] args) {
     }
+
+    public class MyAppLauncher {public static void main(String[] args) {HelloApplication.main(args);}}
+
 }
