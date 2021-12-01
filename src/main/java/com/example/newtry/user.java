@@ -44,4 +44,13 @@ public static boolean checkEmail(String email) {
             return false;
         }
     }
+
+    public static boolean passwordNumber(String pword) {
+        if (pword.matches("(?=.*[0-9]).*")){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }

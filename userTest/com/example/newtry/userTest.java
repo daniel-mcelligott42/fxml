@@ -36,4 +36,12 @@ public class userTest {
     public void checkPletter2() {
         assertFalse(com.example.newtry.user.passwordLetter("12345678a"));
     }
+    @Test
+    public void checkPnumber() {
+        assertFalse(com.example.newtry.user.passwordNumber("allletters"));
+    }
+    @Test
+    public void checkPnumber1() {
+        assertFalse(com.example.newtry.user.passwordNumber("lettersand9"));
+    }
 }
