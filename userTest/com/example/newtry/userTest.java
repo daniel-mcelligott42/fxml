@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class userTest {
+    //check that email is valid,takes param email//
     @Test
     public void checkEmail() {
         assertFalse(com.example.newtry.user.checkEmail("notemail"));
@@ -16,6 +17,7 @@ public class userTest {
         assertFalse(com.example.newtry.user.checkEmail("email@gmail.com"));
     }
 
+    //checks that password is long enough//
     @Test
     public void checkPlength() {
         assertFalse(com.example.newtry.user.passwordLength("sevenl"));
@@ -24,5 +26,14 @@ public class userTest {
     @Test
     public void checkPlength1() {
         assertFalse(com.example.newtry.user.passwordLength("eightlet"));
+    }
+
+    @Test
+    public void checkPletter() {
+        assertFalse(com.example.newtry.user.passwordLetter("12345678"));
+    }
+    @Test
+    public void checkPletter1() {
+        assertFalse(com.example.newtry.user.passwordLetter("12345678a"));
     }
 }

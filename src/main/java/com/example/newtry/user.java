@@ -36,4 +36,12 @@ public static boolean checkEmail(String email) {
         }
     }
 
+    public static boolean passwordLetter(String pword) {
+        if (pword.matches("(?=.*[a-zA-Z]).*")){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
 }
