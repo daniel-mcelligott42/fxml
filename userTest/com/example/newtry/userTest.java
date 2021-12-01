@@ -44,4 +44,13 @@ public class userTest {
     public void checkPnumber1() {
         assertFalse(com.example.newtry.user.passwordNumber("lettersand9"));
     }
+    @Test
+    public void checkSymbol() {
+        assertFalse(com.example.newtry.user.passworsymbol("nosymbols1"));
+    }
+    @Test
+    public void checkSymbol1() {
+        assertFalse(com.example.newtry.user.passworsymbol("symbols1@"));
+    }
+
 }

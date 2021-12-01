@@ -53,4 +53,14 @@ public static boolean checkEmail(String email) {
             return false;
         }
     }
+
+    public static boolean passworsymbol(String pword) {
+        if (pword.matches("(?=.*[*^&@!.]).*")) {
+            return true;
+        }
+        else {
+            return false;
+        }
+
+    }
 }
