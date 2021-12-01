@@ -33,7 +33,7 @@ public class userTest {
         assertFalse(com.example.newtry.user.passwordLetter("12345678"));
     }
     @Test
-    public void checkPletter1() {
+    public void checkPletter2() {
         assertFalse(com.example.newtry.user.passwordLetter("12345678a"));
     }
 }
